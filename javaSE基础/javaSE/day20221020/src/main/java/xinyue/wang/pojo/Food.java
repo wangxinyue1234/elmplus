@@ -89,4 +89,8 @@ public class Food implements Serializable {
                 ", uptime=" + uptime +
                 '}';
     }
+
+    public void setExplain(String foodExplain) {
+        this.foodExplain = foodExplain;
+    }
 }

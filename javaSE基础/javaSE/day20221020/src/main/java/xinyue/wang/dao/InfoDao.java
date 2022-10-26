@@ -11,6 +11,16 @@ public class InfoDao implements DaoImpl<Info>{
     }
 
     @Override
+    public Boolean deleteList(Integer id) {
+        return null;
+    }
+
+    @Override
+    public Boolean deleteByList(Integer id) {
+        return null;
+    }
+
+    @Override
     public Info selectByPrimaryKey(Integer id) {
         return null;
     }
@@ -27,6 +37,11 @@ public class InfoDao implements DaoImpl<Info>{
 
     @Override
     public Boolean updateSelective(Info obj) {
+        return null;
+    }
+
+    @Override
+    public Info selectByPrimaryKeyWithObject(Integer id) {
         return null;
     }
 }

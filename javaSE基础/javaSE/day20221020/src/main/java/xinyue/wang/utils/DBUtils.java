@@ -16,7 +16,7 @@ public class DBUtils {
     //方便用户取得Connection对象，static类方法
     public static Connection getConn(){
         if(conn == null){
-            String url= "jdbc:mysql://localhost:3331/ele_se?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true";
+            String url= "jdbc:mysql://localhost:3310/ele_se?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true";
             try {
                 conn = DriverManager.getConnection(url,"root","111111");
             } catch (SQLException e) {

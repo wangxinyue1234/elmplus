@@ -36,8 +36,9 @@ public class Info implements Serializable {
         return id;
     }
 
-    public void setId(Integer id) {
+    public Info setId(Integer id) {
         this.id = id;
+        return this;
     }
 
     public Integer getAid() {
@@ -60,8 +61,9 @@ public class Info implements Serializable {
         return phone;
     }
 
-    public void setPhone(String phone) {
+    public Info setPhone(String phone) {
         this.phone = phone;
+        return this;
     }
 
     public String getAvatar() {

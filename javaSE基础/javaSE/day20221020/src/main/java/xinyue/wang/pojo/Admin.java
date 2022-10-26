@@ -1,7 +1,9 @@
 package xinyue.wang.pojo;
 
+import xinyue.wang.utils.DTUtils;
+
 import java.io.Serializable;
-import java.security.Timestamp;
+import java.sql.Timestamp;
 
 public class Admin implements Serializable {
     private Integer id;
@@ -25,7 +27,7 @@ public class Admin implements Serializable {
                 ", adminName='" + adminName + '\'' +
                 ", password='" + password + '\'' +
                 ", info=" + info +
-                ", uptime=" + uptime +
+                ", uptime=" + DTUtils.formatDateTime("yy年MM月",uptime) +
                 '}';
     }
 
@@ -33,39 +35,44 @@ public class Admin implements Serializable {
         return id;
     }
 
-    public void setId(Integer id) {
+    public Admin setId(Integer id) {
         this.id = id;
+        return this;
     }
 
     public String getAdminName() {
         return adminName;
     }
 
-    public void setAdminName(String adminName) {
+    public Admin setAdminName(String adminName) {
         this.adminName = adminName;
+        return this;
     }
 
     public String getPassword() {
         return password;
     }
 
-    public void setPassword(String password) {
+    public Admin setPassword(String password) {
         this.password = password;
+        return this;
     }
 
     public Info getInfo() {
         return info;
     }
 
-    public void setInfo(Info info) {
+    public Admin setInfo(Info info) {
         this.info = info;
+        return this;
     }
 
     public Timestamp getUptime() {
         return uptime;
     }
 
-    public void setUptime(Timestamp uptime) {
+    public Admin setUptime(Timestamp uptime) {
         this.uptime = uptime;
+        return this;
     }
 }

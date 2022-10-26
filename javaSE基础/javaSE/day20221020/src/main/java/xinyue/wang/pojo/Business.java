@@ -25,6 +25,11 @@ public class Business {
         this.aid = aid;
     }
 
+    public Business(String name, String pass) {
+        this.password = pass;
+        this.businessName = name;
+    }
+
     @Override
     public String toString() {
         return "Business{" +
@@ -64,6 +69,9 @@ public class Business {
 
     public void setBusinessName(String businessName) {
         this.businessName = businessName;
+    }
+    public void setUptime(Timestamp uptime) {
+        this.uptime = uptime;
     }
 
     public String getBusinessAddress() {
@@ -118,9 +126,8 @@ public class Business {
         return uptime;
     }
 
-    public void setUptime(Timestamp uptime) {
-        this.uptime = uptime;
-    }
+
+
 
     public List<Food> getFoodList() {
         return foodList;
