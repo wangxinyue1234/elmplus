@@ -7,7 +7,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="day20221026" />
+        <module name="d1027" />
+        <module name="day20221027" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="day2022102701" target="11" />
+      <module name="day20221027mini" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="d1027" options="" />
+      <module name="day20221027" options="" />
+    </option>
   </component>
 </project>

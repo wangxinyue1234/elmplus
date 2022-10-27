@@ -4,4 +4,20 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <!--<servlet>
+    <servlet-name>two</servlet-name>
+    <servlet-class>xinyue.wang.one.SecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>two</servlet-name>
+    <url-pattern>/se.do</url-pattern>
+  </servlet-mapping>-->
+  <servlet>
+    <servlet-name>ak47</servlet-name>
+    <servlet-class>xinyue.wang.one.LoginCheck</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ak47</servlet-name>
+    <url-pattern>/a/b/c/log.in</url-pattern>
+  </servlet-mapping>
 </web-app>

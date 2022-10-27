@@ -12,11 +12,17 @@
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
-        </dependency>
+           <groupId>javax.servlet</groupId>
+           <artifactId>javax.servlet-api</artifactId>
+           <version>4.0.1</version>
+           <!--
+           scope:包影响的范围
+           test 仅在测试时生效
+           complie 编译和测试时都会生效，会随项目发布而发布
+           provided 开发时生效，但是不会发布，运行环境会提供该包的副本 servlet
+           -->
+            <scope>provided</scope>
+       </dependency>
     </dependencies>
     <build>
         <finalName>day20221026</finalName>
