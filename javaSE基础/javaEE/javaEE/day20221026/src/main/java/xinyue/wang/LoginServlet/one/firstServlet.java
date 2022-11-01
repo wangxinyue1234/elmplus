@@ -1,4 +1,4 @@
-package xinyue.wang.one;
+package xinyue.wang.controller.LoginServlet.one;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

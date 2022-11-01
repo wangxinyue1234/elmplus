@@ -1,6 +1,6 @@
-package xinyue.wang.one;
+package xinyue.wang.controller.LoginServlet.one;
 
-import xinyue.wang.utils.DBUtils;
+import xinyue.wang.controller.LoginServlet.utils.DBUtils;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
